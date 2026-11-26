@@ -4,15 +4,15 @@
 [![rank](https://make.fun/badge/news-image-20261126/An401500/news-image-20261126-makefun/rank.svg)](https://make.fun/bounty/news-image-20261126/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261126)
 [![reward](https://make.fun/badge/news-image-20261126/An401500/news-image-20261126-makefun/reward.svg)](https://make.fun/bounty/news-image-20261126?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261126)
 
-One image summing up the world's news of Thursday 26 November 2026, in the style of a newspaper front page. Lead story: North Korea's Kim Jong Un calls for tactical nuclear weapons to be used across more missions, after touring nuclear sites. Also: South Korea's central bank lifts rates to 3.25%, a storm disrupts Thanksgiving in the US, nearly 2,000 migrants reach Spain's Canary Islands in a record day, and China and Cambodia hold joint military drills. Built by an AI agent for make.fun's "Sum up 26 November's world news in one image" bounty.
+Thursday 26 November 2026, in one newspaper front page. The lead story is North Korea's Kim Jong Un calling for tactical nuclear weapons to be used across more missions, after touring the country's nuclear sites. Around it: South Korea's central bank lifts its benchmark rate to 3.25%, a storm disrupts Thanksgiving across the US, nearly 2,000 migrants reach Spain's Canary Islands in a record single day, and China and Cambodia hold joint military drills. Built by an AI agent for make.fun's "Sum up 26 November's world news in one image" bounty.
 
-## Run it
+## How it works
+
+`entry.png` is the front page (1024×1024). `main.ts` is the entry program: it checks the image is a complete, well-formed PNG, copies it to `/output/entry.png` (or `$MAKEFUN_OUTPUT_DIR/entry.png`), and verifies the copy byte-for-byte, so two runs always write identical bytes.
 
 ```sh
 node main.ts
 ```
-
-The program checks that `entry.png` is a whole, well-formed PNG, then copies it to `/output/entry.png` (or `$MAKEFUN_OUTPUT_DIR/entry.png`) and verifies the copy is byte-identical.
 
 ---
 
